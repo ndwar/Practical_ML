@@ -238,10 +238,10 @@ SVM          0.9433  0.9507 0.9525 0.9517  0.9544 0.9576    0
 testing1<-(testing[,-c(Kurt,Skew, Max, Min, Amp, Var, Avg, Std)])
 testing1<-testing1[,-1] #removing serial number
 
-###Scoring Test Set
+###Scoring Test Set - Based on Random Forest Model as that has the highest accuracy#############################
 testingpc<-predict(trainset2, testing1)
 predict(modrf, testingpc)
 
-###Scored Results
+###Scored Results###############################################################################################
  [1] B A B A A E D B A A B C B A E E A B B B
 Levels: A B C D E
